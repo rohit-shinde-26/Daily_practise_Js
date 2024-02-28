@@ -11,3 +11,15 @@ function results(myArr,target){
 
 }
 console.log(results(myArr,45))
+
+const myFun = function (str) {
+    return str;
+}
+console.log("hello")
+
+// const checkIndex = (myStr) => {
+//     return myStr[0];
+// }
+
+const checkIndex = myStr => myStr[0];
+console.log(checkIndex("Ram"));
