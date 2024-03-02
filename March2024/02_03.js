@@ -95,12 +95,65 @@ const myArr = ["ram","sham","abhi","raj"]
 //     console.log(myArr[val])
 // }
 
-const myObj={
-    name : "Rohit",
-    age:20,
-    intrest : "coading",
-}
-console.log(myObj);
+// const myObj={
+//     name : "Rohit",
+//     age:20,
+//     intrest : "coading",
+// }
+// console.log(myObj);
 
-console.log(myObj.name)
-console.log(myObj["intrest"])
+// console.log(myObj.name)
+// console.log(myObj["intrest"])
+
+
+// let favCar ={
+//     name : "Supra mk4",
+//     color : "white",
+//     exhaust : "yes",
+//     type : "sport"
+// }
+// console.log(favCar);
+// for(let car in favCar){
+//     console.log(`${car} : ${favCar[car]}`)
+// }
+
+// let key1 = "name";
+// let key2 = "color";
+
+// let val1 = "Supra mk4";
+// let val2 = "White";
+
+// const mycar = {};
+// mycar[key1]=val1;
+// mycar[key2] = val2;
+
+// // const newCar = {...mycar}
+// const{name,color}=mycar
+// console.log(color)
+
+
+// const showRoom = [
+//     {comp : "hyundai",name:"verna","color": "white"},
+//     {comp : "TATA",name:"Harrier","color": "red"},
+//     {comp : "Honda",name:"city","color": "black"},
+//     {comp : "kawasaki",name:"zx10r","color": "green"},
+//     {comp : "wolksvagon",name:"polo","color": "blue"},
+
+// ]
+// console.log(showRoom)
+// const[{comp}, ,{name}]=showRoom
+// console.log(name)
+
+// function add(num1,num2){
+//     return num1+num2;
+// }
+// const add = function(num1,num2){
+//     return num1+num2;
+// }
+const add = (num1,num2)=>{
+    return num1+num2;
+}
+console.log(add(2,4))
+
+const isEven = number => number %2==0;
+console.log(isEven(4))
