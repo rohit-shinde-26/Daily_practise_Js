@@ -39,3 +39,19 @@ const container =()=>{
     myStack1()
 }
 container()
+
+// default parameter
+// take default value 0
+// const mul =(a,b)=>{
+//     if(typeof b === "undefined"){
+//         b = 3;
+//     }
+//     return a*b;
+// }
+// console.log(mul(2))
+
+// easiest way 
+const mul= (a,b=3)=>{
+    return a*b ;
+}
+console.log(mul(2))
