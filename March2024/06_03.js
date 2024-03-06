@@ -25,3 +25,17 @@
 
 
 // lexical scope 
+const container =()=>{
+    var myName = "Ram"
+    const myStack1 = () =>{
+        // let myName = "Rohit"
+        console.log(myName)
+    }
+    const myStack2 = () =>{
+        let lastName = "Shinde";
+        console.log(lastName)
+    }
+    myStack2()
+    myStack1()
+}
+container()
