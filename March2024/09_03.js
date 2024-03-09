@@ -48,4 +48,4 @@ function printData({name,age,city}){
     console.log(name)
     console.log(city)
 }
-printData(myData)
+printData(myData);
