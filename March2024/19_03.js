@@ -10,3 +10,34 @@
 // let score;
 // let fine = 651461464646464614361461n;
 // console.log(typeof (fine))
+
+
+// let score = 0;
+// if(score){
+//     console.log("Truthy value")
+// }
+// else{
+//     console.log("Falsy value")
+// }
+
+let age = 20;
+// age < 25 ? console.log("you are young") : console.log("You are old")
+
+if(age>0 && age <15){
+    console.log("You are child")
+}
+else if(age>15 && age <25){
+    console.log("You are Young")
+}
+
+else if(age>25 && age <45){
+    console.log("You are men")
+}
+
+else if(age>45 && age <65){
+    console.log("You are old")
+}
+else{
+    console.log("Near to death")
+}
+
