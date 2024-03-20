@@ -57,14 +57,29 @@
 // const{...collection}=myFav
 // console.log(collection)
 
-const friends =[
-    {id : 1 , name : "Ram",age: 20},
-    {id : 2 , name : "Laxman",age: 18},
-    {id : 3 , name : "Akay",age: 26},
-    {id : 4 , name : "Aru",age: 25},
+// const friends =[
+//     {id : 1 , name : "Ram",age: 20},
+//     {id : 2 , name : "Laxman",age: 18},
+//     {id : 3 , name : "Akay",age: 26},
+//     {id : 4 , name : "Aru",age: 25},
 
-]
-console.log(friends)
- const[{name},{age}]=friends;
+// ]
+// console.log(friends)
+//  const[{name},{age}]=friends;
 
- console.log(name,age)
+//  console.log(name,age)
+
+ // functions 
+//  sub(5,2)
+//  function sub(no1,no2){
+//     console.log(no1-no2)
+//  }
+
+
+// const multi = function(num1,num2){
+//     return num1*num2
+// }
+// console.log(multi(5,4))
+
+// const evenOdd = num => num%2==0;
+// console.log(evenOdd(4))
