@@ -28,3 +28,6 @@ const bikes = ["H2","Zx10R","Hayabusa","GT 650"]
 //     console.log(`${bikes[bike]}`)
 // }
 
+
+const [kawasaki, ,suzuki] = bikes;
+console.log(suzuki)
