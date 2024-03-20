@@ -42,14 +42,29 @@
 // console.log(myObj.name)
 // console.log(myObj["fav Car"])
 
-const myFav = {}
+// const myFav = {}
 
-let key1 = "Bike";
-let key2 = "car";
+// let key1 = "Bike";
+// let key2 = "car";
 
-let val1 = "Zx10R";
-let val2 = "Supra Mk4"
+// let val1 = "Zx10R";
+// let val2 = "Supra Mk4"
 
-myFav[key1]=val1
-myFav[key2]=val2
-console.log(myFav)
+// myFav[key1]=val1
+// myFav[key2]=val2
+// console.log(myFav)
+
+// const{...collection}=myFav
+// console.log(collection)
+
+const friends =[
+    {id : 1 , name : "Ram",age: 20},
+    {id : 2 , name : "Laxman",age: 18},
+    {id : 3 , name : "Akay",age: 26},
+    {id : 4 , name : "Aru",age: 25},
+
+]
+console.log(friends)
+ const[{name},{age}]=friends;
+
+ console.log(name,age)
