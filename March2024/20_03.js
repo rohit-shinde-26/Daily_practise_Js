@@ -83,3 +83,54 @@
 
 // const evenOdd = num => num%2==0;
 // console.log(evenOdd(4))
+
+// const main = () =>{
+//     const multi = function(num1,num2){
+//     return num1*num2
+// }
+// console.log(multi(5,4))
+
+// }
+// main()
+
+// const Add = (a,b=2) => {
+//     // if(typeof b === "undefined"){
+//     //     b=2
+//     // }
+//     return a+b
+// }
+// console.log(Add(5))
+
+// let total = 0
+// const addAll =(...numbers)=>{
+//    for(let num of numbers){
+//     total = total + num
+//    }
+// }
+// console.log(addAll(5,2,6,5,6,4,5,2,56,5,52,565,52,4))
+// console.log(total)
+
+// para destructuring
+const cars ={
+    name : "supra mk4",
+    color : "White"
+}
+// const details = (obj) =>{
+//     console.log(obj.name)
+// }
+const details = ({name,color}) => {
+    console.log(color)
+}
+details(cars)
+
+// callback 
+
+const func1 =(name)=>{
+    console.log("this is func1")
+    console.log(`${name}`)
+}
+const func2 =(callback) => {
+    console.log("this is func 2")
+    callback("Ram")
+}
+func2(func1)
