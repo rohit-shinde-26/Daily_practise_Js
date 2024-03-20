@@ -62,3 +62,30 @@
 //     default :
 //     console.log("invalid")
 // }
+
+// the loops 
+
+// let i = 0;
+// let total = 0;
+// while(i < 10){
+//     console.log(i)
+//     i++
+//     total = total + i
+// }
+// console.log(total)
+
+for (let i=0;i<10;i++){
+    
+    if(i===4){
+        continue
+    }
+    console.log(i)
+}
+console.log("-----------------------------")
+for (let i=0;i<10;i++){
+    
+    if(i===4){
+        break
+    }
+    console.log(i)
+}
