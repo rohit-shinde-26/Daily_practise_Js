@@ -17,7 +17,14 @@
 
 let i = 0;
 const bikes = ["H2","Zx10R","Hayabusa","GT 650"]
-while(i<bikes.length){
-    console.log(bikes[i])
-    i++
-}
+// while(i<bikes.length){
+//     console.log(bikes[i])
+//     i++
+// }
+// for(let bike of bikes){
+//     console.log(bike)
+// }
+// for(let bike in bikes){
+//     console.log(`${bikes[bike]}`)
+// }
+
