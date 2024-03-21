@@ -17,3 +17,15 @@ const myArr =[2,4,6,8,10]
 for(let num of myArr){
     console.log(num)
 }
+
+const friends = [
+    {name: "Ram", age:21},
+    {name: "Abhi", age:20}
+]
+
+// friends.forEach((friend,age)=>{
+//     console.log(friend.name)
+// })
+for(let friend of friends){
+    console.log(friend.name)
+}
