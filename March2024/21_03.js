@@ -52,3 +52,9 @@
 // const finalData = list
 // console.log(finalData)
 
+const numbers = [1,8,9,3,2,6,4,7,81]
+const evenOdd = numbers.filter((num)=>{
+    return num%2===0
+})
+const ans = evenOdd
+console.log(ans)
