@@ -10,6 +10,10 @@ const myArr =[2,4,6,8,10]
 //     myAns(myArr[i],i)
 // }
 
-myArr.forEach((num,index)=>{
-    console.log(num,index)
-})
+// myArr.forEach((num,index)=>{
+//     console.log(num,index)
+// })
+
+for(let num of myArr){
+    console.log(num)
+}
