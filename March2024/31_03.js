@@ -254,3 +254,53 @@ const myObj = {
 // arr.fill(0,2,5)
 // arr.splice(0,3,90)
 // console.log(arr)
+
+
+const showRoom =[
+    {id : 1, name : "mustang", color : "red", price : 500},
+    {id : 2, name : "Lambo", color : "Yellow", price : 5000},
+    {id : 3, name : "Supra", color : "White", price : 5070},
+    {id : 4, name : "polo GT", color : "Blue", price : 600},
+    {id : 5, name : "Virtus", color : "Silver", price : 900},
+    {id : 6, name : "City", color : "Black", price : 1},
+
+]
+
+// showRoom.forEach((data,index)=>{
+//     console.log(`${index} : ${data.price}`)
+// })
+
+// const ans = showRoom.map((data,index)=>{
+//     return data.price>2000
+// })
+// console.log(ans)
+
+// const ans = showRoom.filter((data)=>{
+//     return data.price%2==0
+// })
+// console.log(ans)
+
+// const ans = showRoom.reduce((data,total)=>{
+//     return data+total.price
+// },0)
+// console.log(ans)
+
+// const ans = showRoom.slice(0).sort((a,b)=>{
+//     return b.price-a.price
+// })
+// console.log(ans)
+
+// const ans = showRoom.slice(0).sort((a,b)=>{
+//     if(a.name<b.name){
+//         return 1
+//     }else{
+//         return 0
+//     }
+// })
+// console.log(ans)
+
+// const ans = showRoom.find((data)=>{
+//     return data.name=="Supra"
+// })
+// console.log(ans)
+
