@@ -304,3 +304,31 @@ const showRoom =[
 // })
 // console.log(ans)
 
+//ITERABLES
+// let str = "Rohit"
+// console.log(str[0])
+
+// const arr = ["name","age"]
+// let length = 0
+// for(let ele of arr){
+//     length++
+// }
+// console.log(length)
+
+// sets 
+// const arr = new Set();
+// arr.add(5)
+// arr.add(2)
+// arr.add(8)
+// arr.add(3)
+// arr.add(9)
+// arr.add(1)
+// console.log(arr)
+
+// const myArr = [45,69,22,54,14,63,87]
+// const ans = new Set(myArr)
+// let length = 0
+// for(let ele of myArr){
+//     length++
+// }
+// console.log(length)
