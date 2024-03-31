@@ -206,3 +206,51 @@ const myObj = {
 // }
 
 // myFunc2(myFunc)
+
+
+
+// ------------------------------------------------------------------
+// const arr = [2,6,45,8,5,2]
+// const myArr = ["Bmw","TATA","Toyota"]
+// arr.forEach((number,index)=>{
+//     console.log(number*number)
+// })
+
+// const ans = arr.map((num,index)=>{
+//     return num*num
+// })
+// console.log(ans)
+
+// const ans = arr.filter((num)=>{
+//     return num%2===0
+// })
+// console.log(ans)
+
+// const ans = arr.reduce((accumulator,total)=>{
+//     return accumulator+total
+// })
+// console.log(ans)
+
+// const ans = arr.sort((a,b)=>{
+//     return a-b
+// })
+// console.log(ans)
+
+// const ans = myArr.find((data)=>{
+//     return data.length==3
+// })
+// console.log(ans)
+
+// const ans = arr.every((data)=>{
+//     return data%2==0
+// })
+// console.log(ans)
+
+// const ans = arr.some((data)=>{
+//     return data%2==0
+// })
+// console.log(ans)
+
+// arr.fill(0,2,5)
+// arr.splice(0,3,90)
+// console.log(arr)
