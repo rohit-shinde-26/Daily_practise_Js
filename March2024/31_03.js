@@ -191,7 +191,18 @@ const myObj = {
 
 // myFunc(myObj)
 
-const newFunc = ({name,age})=>{
-    console.log(name)
-}
-newFunc(myObj)
+// const newFunc = ({name,age})=>{
+//     console.log(name)
+// }
+// newFunc(myObj)
+
+// const myFunc =(name)=>{
+//     console.log("This is first function")
+//     console.log(`hello ${name}`)
+// }
+// const myFunc2 = (callback) =>{
+//     console.log("This is 2nd fun")
+//     callback("Ram")
+// }
+
+// myFunc2(myFunc)
