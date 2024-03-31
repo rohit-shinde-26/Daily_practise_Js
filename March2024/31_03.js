@@ -64,3 +64,77 @@
     
 // }
 
+// const arr = [2,5,6,8,4,6,9]
+// const[...newArr]=arr
+// console.log(newArr===arr)
+// for(let i =0;i<arr.length;i++){
+//     console.log(arr[i])
+// }
+
+// for(let num of arr){
+//     console.log(num)
+// }
+// for(let num in arr){
+//     console.log(`${num} : ${arr[num]}`)
+// }
+
+// const [val1, ,val2,...all]=arr
+// console.log(val2)
+
+// const myObj = {
+//     name : "Rohit",
+//     age : 21,
+//    "email" : "rohit@google.com",
+// }
+
+// console.log(myObj["email"])
+
+// for(let item in myObj){
+//     console.log(myObj[item])
+// }
+
+// let key1 = "name";
+// let key2 = "age"
+
+// let val1 = "Ram"
+// let val2 = 21
+
+// const newObj={
+//    [key2] : val2
+// };
+
+// newObj[key1]=val1
+
+
+// console.log(newObj)
+
+//  const {...newObj}=myObj
+//  console.log(newObj)
+
+// const{name,age,email}=myObj
+// console.log(name)
+
+
+
+// const arr = [
+//     {name : "ram", age : 22, salary : 300000},
+//     {name : "sham", age : 21, salary : 25000},
+//     {name : "hari", age : 18, salary : 460000},
+//     {name : "om", age : 20, salary : 90000},
+// ]
+// const[{name,age},{},{salary}]=arr
+// console.log(name)
+
+
+// function add(num1,num2){
+//     console.log(num1+num2)
+// }
+// add(2,5)
+
+// const sub = function(no1,no2){
+//     console.log(no1-no2)
+// }
+// sub(6,5)
+
+// const str = data => data%2==0
+// console.log(str(4))
