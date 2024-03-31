@@ -138,3 +138,60 @@
 
 // const str = data => data%2==0
 // console.log(str(4))
+
+// mult(6,5)
+// function mult(no1,no2){
+//     console.log(no1*no2)
+// }
+
+// const container = () =>{
+//     const myFunc = () =>{
+//         console.log("hello")
+//     }
+//     myFunc()
+//     const newFunc = () =>{
+//         console.log("Ram")
+//     }
+//     newFunc()
+// }
+// // container()
+
+// const myFunc = (a,b=2)=>{
+//     // if(typeof b ==="undefined"){
+//     //     b=2
+//     // }
+//     return a+b
+// }
+// console.log(myFunc(5))
+
+
+// function func(...nums){
+//     let total = 0
+//     for(let num of nums){
+//     total = total + num
+//     }
+//     return total
+// }
+// const ans = func(2,6,5,4,7,8,5,2)
+// console.log(ans)
+
+
+
+const myObj = {
+    name : "Rohit",
+    age : 21,
+   "email" : "rohit@google.com",
+}
+
+// const myFunc = (obj)=>{
+//     console.log(obj.name)
+// }
+
+
+
+// myFunc(myObj)
+
+const newFunc = ({name,age})=>{
+    console.log(name)
+}
+newFunc(myObj)
