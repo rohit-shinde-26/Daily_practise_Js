@@ -332,3 +332,26 @@ const showRoom =[
 //     length++
 // }
 // console.log(length)
+
+// map 
+// add key value pair 
+// const person = new Map()
+// person.set('firstname','Rohit')
+// person.set('age',21)
+// person.set('email','rohit@google.com')
+// console.log(person)
+// how to access 
+// console.log(person.get('firstname'))
+// for(let [key,value] of person){
+//     console.log(`${key} : ${value}`)
+// }
+
+const person1 ={
+    id:1,
+    name : "Ram"
+}
+const userInfo = new Map()
+userInfo.set(person1,{age:21,gender: "male"})
+console.log(userInfo)
+
+// const person = new Map([['firstname','Rohit'],['age',21]])
