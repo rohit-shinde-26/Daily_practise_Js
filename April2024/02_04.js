@@ -102,7 +102,14 @@ const obj = {
 
 
 // const obj2 = Object.assign({},obj)
-const obj2 = {...obj}
-console.log(obj === obj2)
-console.log(obj2)
+// const obj2 = {...obj}
+// console.log(obj === obj2)
+// console.log(obj2)
 
+// object chaining 
+const person = {
+    name : "Rohit",
+    // info: {address : "sangamner"}
+}
+console.log(person.name)
+console.log(person?.info?.address)
