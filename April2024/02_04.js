@@ -89,3 +89,20 @@
 
 // console.log(extraInfo.get(person1))
 // console.log(extraInfo)
+
+// clone object using onject assign 
+const obj = {
+    firstName : "Rohit",
+    age : 21
+}
+
+// const obj2 = obj;
+// obj2.key= "private";
+// console.log(obj)
+
+
+// const obj2 = Object.assign({},obj)
+const obj2 = {...obj}
+console.log(obj === obj2)
+console.log(obj2)
+
