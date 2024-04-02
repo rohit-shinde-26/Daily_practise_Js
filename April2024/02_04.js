@@ -47,6 +47,45 @@
 // Map object
 // it store key value pair 
 
+// object literel 
+// key -> String
+// key -> symbol 
+// const person = {
+//     firstName : "Rohit",
+//     age : 22,
+//     1 : "one"
+// }
+// console.log(person.firstName)
+// console.log(person["firstName"])
 
+// for(let key in person){
+//     console.log(typeof key)
+// }
 
+// it also store key value pair
+// we add for in loop to object but using map we directly use for of loop
 
+// const person = new Map();
+// person.set("firstName","Rohit")
+// person.set("age",22)
+// person.set(1,"one")
+
+// console.log(person)
+
+// for(let [key,value] of person){
+//     console.log( key,typeof key)
+// }
+
+// const person = new Map([["firstName","Rohit"],["age",22]])
+// console.log(person)
+
+// const person1 = {
+//     firstName : "Abhi",
+//     age : 18
+// }
+// const extraInfo = new Map()
+// extraInfo.set(person1,{gender : "male"})
+// console.log(person1.age)
+
+// console.log(extraInfo.get(person1))
+// console.log(extraInfo)
