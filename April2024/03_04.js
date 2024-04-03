@@ -66,3 +66,28 @@
 // }
 // console.log(person.name)
 // console.log(person?.info?.address)
+
+
+// METHODS 
+// console.log(this)
+// "use Strict"
+function myFunc(val1,val2){
+    console.log(`name is ${this.firstName} and age is ${this.age} ${val1} ${val2}`)
+}
+const person1 = {
+    firstName : "Ram",
+    age : 22,
+    about : myFunc
+}
+const person2 = {
+    firstName : "Akash",
+    age : 20,
+  
+}
+
+// person1.about.call(person2)
+
+myFunc.apply(person2,["coding","Teaching"])
+
+const hello = myFunc.bind(person2,"coding","singing")
+hello()
