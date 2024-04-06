@@ -98,29 +98,40 @@
 //     console.log(user1.is18())
 
 
-    const info={
-        about : function(){
-             return `my name is ${this.name} and age is ${this.age}`
-         },
-         is18 : function(){
-             return this.age>=18
-         }
-     }
+    // const info={
+    //     about : function(){
+    //          return `my name is ${this.name} and age is ${this.age}`
+    //      },
+    //      is18 : function(){
+    //          return this.age>=18
+    //      }
+    //  }
          
-     function myFunc(name,age,email){
-         const myObj = Object.create(info)
-         myObj.name=name;
-         myObj.age=age;
-         myObj.email=email;
+    //  function myFunc(name,age,email){
+    //      const myObj = Object.create(info)
+    //      myObj.name=name;
+    //      myObj.age=age;
+    //      myObj.email=email;
          
      
      
      
-         return myObj;
-         }
+    //      return myObj;
+    //      }
      
-         const user1 = myFunc("Rohit",22,"rohit@22")
-         console.log(user1)
-         console.log(user1.about())
-         console.log(user1.is18())
+    //      const user1 = myFunc("Rohit",22,"rohit@22")
+    //      console.log(user1)
+    //      console.log(user1.about())
+    //      console.log(user1.is18())
      
+
+
+    // __proto__
+    const obj1 ={
+        key1 : "val1",
+        key2 : "val2"
+    }
+    const obj2 = Object.create(obj1)
+        obj2.key3 = "val3"
+    
+    console.log(obj2.key1)
