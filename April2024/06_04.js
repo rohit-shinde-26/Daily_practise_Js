@@ -127,11 +127,17 @@
 
 
     // __proto__
-    const obj1 ={
-        key1 : "val1",
-        key2 : "val2"
-    }
-    const obj2 = Object.create(obj1)
-        obj2.key3 = "val3"
+    // const obj1 ={
+    //     key1 : "val1",
+    //     key2 : "val2"
+    // }
+    // const obj2 = Object.create(obj1)
+    //     obj2.key3 = "val3"
     
-    console.log(obj2.key1)
+    // console.log(obj2.key1)
+
+
+    // iterables
+
+
+    
