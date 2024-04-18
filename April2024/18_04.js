@@ -71,22 +71,55 @@
 // const cust1 = showRoom("Supra","Red","12000000")
 // console.log(cust1.about())
 
-const details={
-    about : function(){
-        return `my car name is ${this.carName}`
-    }
-}
+// const details={
+//     about : function(){
+//         return `my car name is ${this.carName}`
+//     }
+// }
 
 
-function showRoom(carName,color,price){
-    const cars={}
-    cars.carName=carName;
-    cars.color=color;
-    cars.price=price;
-   cars.about=details.about
-    return cars;
+// function showRoom(carName,color,price){
+//     const cars={}
+//     cars.carName=carName;
+//     cars.color=color;
+//     cars.price=price;
+//    cars.about=details.about
+//     return cars;
 
-}
+// }
 
-const cust1 = showRoom("Supra","Red","12000000")
-console.log(cust1.about())
+// const cust1 = showRoom("Supra","Red","12000000")
+// console.log(cust1.about())
+
+
+
+// const obj={
+//     key1 : "val1",
+//     key2 : "val2"
+// }
+
+// const obj2 = Object.create(obj)
+// obj2.key3="val3"
+// console.log(obj2.key3)
+
+
+// const details={
+//         about : function(){
+//             return `my car name is ${this.carName}`
+//         }
+//     }
+    
+    
+//     function showRoom(carName,color,price){
+//         const cars=Object.create(details)
+//         cars.carName=carName;
+//         cars.color=color;
+//         cars.price=price;
+       
+//         return cars;
+    
+//     }
+    
+//     const cust1 = showRoom("Supra","Red","12000000")
+//     console.log(cust1.about())
+    
