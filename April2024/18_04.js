@@ -33,3 +33,24 @@
 // // bind 
 // const ans = myInfo.bind(info,"coding","Gaming")
 // ans()
+
+
+// const myFunc = {
+//     name : "Ram",
+//     age : 22,
+//     about:function(){
+//         console.log(`my name is ${this.name}`)
+//     }
+// }
+
+// myFunc.about()
+
+const myFunc = {
+    name : "Ram",
+    age : 22,
+    about(){
+        console.log(`my name is ${this.name}`)
+    }
+}
+
+myFunc.about()
