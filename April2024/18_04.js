@@ -123,3 +123,35 @@
 //     const cust1 = showRoom("Supra","Red","12000000")
 //     console.log(cust1.about())
     
+
+
+// prototype
+// function hello(){
+//     console.log("hello world")
+// }
+// hello()
+
+// hello.prototype.age=function(){
+//     console.log("this is func")
+// }
+
+// hello.prototype.age()
+
+
+    
+    function showRoom(carName,color,price){
+        const cars=Object.create(showRoom.prototype)
+        cars.carName=carName;
+        cars.color=color;
+        cars.price=price;
+      
+        return cars;
+    
+    }
+    showRoom.prototype.myFav=function(){
+        return `i love ${this.color}`
+    }
+    
+    const cust1 = showRoom("Supra","Red","12000000")
+    console.log(cust1.myFav())
+    
