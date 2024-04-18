@@ -45,12 +45,48 @@
 
 // myFunc.about()
 
-const myFunc = {
-    name : "Ram",
-    age : 22,
-    about(){
-        console.log(`my name is ${this.name}`)
+// const myFunc = {
+//     name : "Ram",
+//     age : 22,
+//     about(){
+//         console.log(`my name is ${this.name}`)
+//     }
+// }
+
+// myFunc.about()
+
+
+// function showRoom(carName,color,price){
+//     const cars={}
+//     cars.carName=carName;
+//     cars.color=color;
+//     cars.price=price;
+//     cars.about=function(){
+//         return `my car name is ${this.carName}`
+//     }
+//     return cars;
+
+// }
+
+// const cust1 = showRoom("Supra","Red","12000000")
+// console.log(cust1.about())
+
+const details={
+    about : function(){
+        return `my car name is ${this.carName}`
     }
 }
 
-myFunc.about()
+
+function showRoom(carName,color,price){
+    const cars={}
+    cars.carName=carName;
+    cars.color=color;
+    cars.price=price;
+   cars.about=details.about
+    return cars;
+
+}
+
+const cust1 = showRoom("Supra","Red","12000000")
+console.log(cust1.about())
