@@ -139,19 +139,37 @@
 
 
     
-    function showRoom(carName,color,price){
-        const cars=Object.create(showRoom.prototype)
-        cars.carName=carName;
-        cars.color=color;
-        cars.price=price;
+    // function showRoom(carName,color,price){
+    //     const cars=Object.create(showRoom.prototype)
+    //     cars.carName=carName;
+    //     cars.color=color;
+    //     cars.price=price;
       
-        return cars;
+    //     return cars;
+    
+    // }
+    // showRoom.prototype.myFav=function(){
+    //     return `i love ${this.color}`
+    // }
+    
+    // const cust1 = showRoom("Supra","Red","12000000")
+    // console.log(cust1.myFav())
+    
+
+    
+    function showRoom(carName,color,price){
+        
+        this.carName=carName;
+        this.color=color;
+        this.price=price;
+      
+        
     
     }
     showRoom.prototype.myFav=function(){
         return `i love ${this.color}`
     }
     
-    const cust1 = showRoom("Supra","Red","12000000")
+    const cust1 = new showRoom("Supra","Red","12000000")
     console.log(cust1.myFav())
     
