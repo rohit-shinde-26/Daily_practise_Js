@@ -71,23 +71,53 @@
 // ans()
 
 
-function myFunc(){
-    let count=0;
-    return function(){
-        // console.log( `${fName} ${lName}`)
+// function myFunc(){
+//     let count=0;
+//     return function(){
+//         // console.log( `${fName} ${lName}`)
 
-        if(count<1){
-            console.log("hello")
-            count++
-        }
-        else{
-            console.log("World")
-        }
-    }
+//         if(count<1){
+//             console.log("hello")
+//             count++
+//         }
+//         else{
+//             console.log("World")
+//         }
+//     }
      
-}
+// }
 
 
-const ans = myFunc()
-ans()
-ans()
+// const ans = myFunc()
+// ans()
+// ans()
+
+
+// events 
+
+
+// const allButton=document.querySelector(".allBtn")
+
+// allButton.addEventListener("click",function(){
+//     console.log("Event clicked")
+// })
+
+
+
+
+const allButton=document.querySelectorAll(".allBtn button")
+
+
+// for(let button of allButton){
+//     button.addEventListener("click",function(){
+//         console.log(this.textContent)
+//     })
+    
+// }
+
+
+// allButton.forEach((button)=>{
+//     button.addEventListener("click",function(){
+//                console.log(this.textContent)
+//            })
+// })
