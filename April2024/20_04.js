@@ -32,25 +32,62 @@
 
 
 
-class person{
-    constructor(fName,lName,age){
-        this.fName=fName;
-        this.lName=lName;
-        this.age=age;
-    }
-    get fullName(){
-        return `${this.fName} ${this.lName}`
-    }
+// class person{
+//     constructor(fName,lName,age){
+//         this.fName=fName;
+//         this.lName=lName;
+//         this.age=age;
+//     }
+//     get fullName(){
+//         return `${this.fName} ${this.lName}`
+//     }
 
-    set fullName(fullName){
-        const[fName,lName] = fullName.split(" ")
-        this.fName=fName;
-        this.lName=lName;
-    }
-}
+//     set fullName(fullName){
+//         const[fName,lName] = fullName.split(" ")
+//         this.fName=fName;
+//         this.lName=lName;
+//     }
+// }
 
-const user1 = new person("Rohit","Shinde",22)
+// const user1 = new person("Rohit","Shinde",22)
+// // console.log(user1.fullName)
+
+// user1.fullName="Rohit Shinde"
 // console.log(user1.fullName)
 
-user1.fullName="Rohit Shinde"
-console.log(user1.fullName)
+
+// closures
+
+// function myFunc(){
+//     let x = 22;
+//     function innerFunc(){
+//         console.log( `value of x is ${x}`)
+//     }
+//      return innerFunc
+// }
+
+
+// const ans = myFunc()
+// ans()
+
+
+function myFunc(){
+    let count=0;
+    return function(){
+        // console.log( `${fName} ${lName}`)
+
+        if(count<1){
+            console.log("hello")
+            count++
+        }
+        else{
+            console.log("World")
+        }
+    }
+     
+}
+
+
+const ans = myFunc()
+ans()
+ans()
