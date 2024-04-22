@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events practise</title>
+    <script src="./22_04.js" defer></script>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        .btn{
+            padding: 8px  12px;
+            border: none;
+            background-color: azure;
+            
+        }
+        .btn:hover{
+            background-color: chartreuse;
+            transition: 1s;
+            color: red;
+        }
+        .gp{
+            height: 150px;
+            width: 150px;
+            background-color: blue;
+        }
+        .parent{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+        }
+        .child{
+            height: 50px;
+            width: 50px;
+            background-color: blanchedalmond;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <button class="btn btn1">Button 1</button>
+        <button class="btn btn2">Button 2</button>
+        <button class="btn btn3">Button 3</button>
+    </div> 
+    
+
+    <!-- <button>change <span class="currentColor"></span></button> -->
+
+<div class="main">
+
+    <div class="gp myDivs">
+        GrandParent
+        <div class="parent myDivs">
+            Parent
+            <div class="child myDivs">
+                Child
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
