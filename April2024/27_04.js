@@ -1,16 +1,37 @@
-const tools = ["Spoiler","Nos","Exhaust","Color"]
+// const tools = ["Spoiler","Nos","Exhaust","Color"]
 
-const myCarPromise = new Promise((resolve,reject)=>{
+// const myCarPromise = new Promise((resolve,reject)=>{
+//     if(tools.includes("Spoiler") && tools.includes("Exhaust")){
+//         resolve({car : "Supra"})
+//     }
+//     else{
+//         reject(error)
+//     }
+// })
+
+// myCarPromise.then((car)=>{
+//     console.log("This is supra",car)
+// }).catch((error)=>{
+//     console.log("This is not supra")
+// })
+
+// function return promise 
+
+function myCarPromise(){
+    const tools = ["Spoiler","Nos","Exhaust","Color"]
+    return new Promise((resolve,reject)=>{
     if(tools.includes("Spoiler") && tools.includes("Exhaust")){
-        resolve("Here is my car")
+        resolve({car : "Supra"})
     }
     else{
-        reject("This is not my car")
+        reject(error)
     }
 })
+}
 
-myCarPromise.then(()=>{
-    console.log("This is supra")
+
+myCarPromise().then((car)=>{
+    console.log("This is supra",car)
 }).catch((error)=>{
     console.log("This is not supra")
 })
