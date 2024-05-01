@@ -69,11 +69,41 @@ const heading10 = document.querySelector(".heading10")
 
 
 
-setTimeout(()=>{
-    heading1.textContent="One"
-    heading1.style.color="red"
+// setTimeout(()=>{
+//     heading1.textContent="One"
+//     heading1.style.color="red"
+//     setTimeout(()=>{
+//         heading2.textContent="two"
+//         heading2.style.color="yellow"
+//     },1000)
+// },1000)
+
+// pyramid of doom
+
+
+function myFunc(element,text,color,time,onSuccess,onFail){
     setTimeout(()=>{
-        heading2.textContent="two"
-        heading2.style.color="yellow"
-    },1000)
-},1000)
+    if(element){
+        element.textContent=text;
+        element.style.color=color;
+        if(onSuccess){
+            onSuccess()
+        }
+    }else{
+        if(onFail){
+            onFail()
+        }
+    }
+},time)
+}
+
+myFunc(heading1,"one","red",1000,()=>{
+    myFunc(heading2,"two","green",1000,()=>{
+        myFunc(heading3,"three","blue",1000,()=>{
+            myFunc(heading4,"four","orange",1000,()=>{
+
+
+            },()=>{console.log("Heading 4 not exist")})
+        },()=>{console.log("Heading 3 not exist")})
+    },()=>{console.log("Heading 2 not exist")})
+},()=>{console.log("Heading 1 not exist")})
