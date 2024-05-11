@@ -37,12 +37,25 @@
 // const mynewObj = { ..."a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z" };
 // console.log(mynewObj);
 
-const myArr = [
-  { name: "Ram", age: 22, hobby: "Gaming" },
-  { name: "Sham", age: 21, hobby: "Coding" },
-  { name: "hari", age: 32, hobby: "kabaddi" },
-  { name: "Om", age: 18, hobby: "Gaming" },
-];
+// const myArr = [
+//   { name: "Ram", age: 22, hobby: "Gaming" },
+//   { name: "Sham", age: 21, hobby: "Coding" },
+//   { name: "hari", age: 32, hobby: "kabaddi" },
+//   { name: "Om", age: 18, hobby: "Gaming" },
+// ];
 
-const [{ name, bobby }] = myArr;
-console.log(name);
+// const [{ name, bobby }] = myArr;
+// console.log(name);
+
+const URL = "https://jsonplaceholder.typicode.com/posts";
+
+const xhr = new XMLHttpRequest();
+xhr.open("GET", URL);
+xhr.onload = function () {
+  const response = xhr.response;
+  const data = JSON.parse(response);
+  console.log(typeof data);
+  console.log(data);
+};
+
+xhr.send();
